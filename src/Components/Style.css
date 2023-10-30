@@ -1,0 +1,133 @@
+*{
+    background-color: rgb(7, 7, 7);
+}
+
+.header{
+    color: rgb(252, 246, 246);
+    text-align: left;
+}
+.container{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.add{
+  display: flex;
+  width: 127%;
+}
+.input{
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+  
+}
+.añadir{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.mi-boton:hover {
+    background-color: #0056b3;
+  }
+
+.barras{
+  background-color: rgb(36, 43, 44);
+  color: rgb(249, 246, 246);
+  margin-bottom: 10px; /* Espacio entre tareas */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 120%;
+  justify-content: space-between;
+  }
+
+.barras svg{
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .checkbox {
+    display: none;
+  }
+  
+  /* Estilizar el contenedor del checkbox (el espacio reservado para el checkbox) */
+  .checkbox + label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f9fafb; /* Color de fondo del checkbox cuando está marcado */
+    border: 1px solid #007bff; /* Borde del checkbox */
+    border-radius: 50%; 
+    cursor: pointer;
+  }
+  
+  /* Estilo del icono dentro del checkbox cuando está marcado */
+  .checkbox:checked + label::before {
+    content: "✔"; 
+    font-size: 16px;
+    color: #020202; /* Color del icono */
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo del icono dentro del checkbox cuando no está marcado */
+  .checkbox + label::before {
+    content: ""; /* El contenido está vacío por defecto */
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .icons {
+    background-color: rgb(36, 43, 44);
+    display: flex;
+  }
+
+  
+  .garbage {
+    background-color: rgb(36, 43, 44);
+    color: red;
+    margin-left: 10px; /* Espacio entre los íconos */
+  }
+.edit{
+  color: #f7f2f2;
+    background-color: rgb(36, 43, 44);
+    margin-left: 10px;
+}
+
+.container-clear{
+  display: flex;
+  width: 127%;
+}
+
+.input-clear{
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+  
+
+}
+
+.Botton-clear{
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+  
