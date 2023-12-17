@@ -1,7 +1,8 @@
 import { useContext, useState } from 'react';
-import { Context } from '../hooks/Context'
+import { Context } from '../Contexts/Context';
+import { Button, Input, Stack } from '@chakra-ui/react'
 
-function Input () {
+function Fomrs () {
 
     const [formsValidation, setFormsValidation]= useState({
         newTask: undefined,
@@ -16,7 +17,7 @@ function Input () {
             agregarTarea(formsValidation.newTask);
             formsValidation.newTask = "";
          }
-        }
+        };
 
         const handleKeyDown = (event) => {
             if (event.key === 'Enter') {
@@ -41,7 +42,7 @@ function Input () {
             setFormsValidation({
                 ...formsValidation, 
                 newTask: true
-              })}}
+              })}};
             
               function isValid() {
                 return Object.keys(formsValidation).every(
@@ -51,8 +52,9 @@ function Input () {
         
     return(
         <form onSubmit={handleSubmit}>
-        <div className="add">
-        <input type="text" placeholder="add new Task" className="input"
+        <Stack spacing={3} align='center'>
+        <Input variant='filled' placeholder='add new Task' mt='10px' isInvalid w='50vh'
+        errorBorderColor='crimson'
         value={newTask}
         onKeyDown={handleKeyDown} 
         onChange= {(e) => {
@@ -60,15 +62,16 @@ function Input () {
             handleTaskValidation(e);}}/> 
         {formsValidation.newTask && <span style={{color:'red'}}>{formsValidation.newTask}</span>}
         
-        <input type="text"  placeholder="add Description (optional)" className="input descripcion"
+        <Input variant='filled' placeholder='add Description (optional)' isInvalid w='50vh'
+        errorBorderColor='crimson'
         value={description}
         onKeyDown={handleKeyDown } 
         onChange={(e)=> setDescription(e.target.value)}/> 
         
-        <button onClick={handleSubmit} disabled = {!isValid} className="añadir">+</button>
-        </div>
+        <Button onClick={handleSubmit} disabled = {!isValid} colorScheme='blue' w='50vh' >+</Button>
+        </Stack>
         </form>
     )
 };
 
-export default Input;
+export default Fomrs;

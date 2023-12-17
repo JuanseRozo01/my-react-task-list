@@ -1,0 +1,20 @@
+{
+    "Home":{
+        "Heading":"Bienvenido a Todo app",
+        "Text":"¡Hola! Bienvenido a un mundo de posibilidades con nuestra aplicación innovadora, TaskMaster. Estamos encantados de tenerlo a bordo mientras nos embarcamos en este viaje de productividad y eficiencia. TaskMaster no es solo un administrador de tareas promedio; es una herramienta dinámica. herramienta diseñada para adaptarse a sus necesidades únicas. Sumérgete en una experiencia perfecta de creación, edición y organización de tus tareas sin esfuerzo. Nuestra interfaz fácil de usar garantiza una experiencia de navegación fluida, mientras que potentes funciones te permiten priorizar, establecer plazos y categorizar tareas. con precisión. Entendemos la importancia de permanecer conectado, por lo que TaskMaster se sincroniza perfectamente en todos sus dispositivos, manteniéndolo en control sin importar dónde se encuentre. Pero eso no es todo, nuestro compromiso con la excelencia significa actualizaciones y mejoras constantes, garantizando que siempre tenga acceso. a las últimas y mejores características. Su éxito es nuestra prioridad y estamos emocionados de ser parte de su viaje hacia el logro de sus objetivos. Gracias por elegir TaskMaster; ¡Hagamos de cada tarea un paso hacia el éxito!"
+    },
+    "SobreNosotros":{
+        "Text":"¡Bienvenido a nuestro sitio web rico en funciones creado para mejorar su experiencia digital! El núcleo de nuestra plataforma es React, una potente biblioteca de JavaScript que nos permite crear una interfaz de usuario dinámica y fluida. Aprovechando la flexibilidad y la modularidad de React, hemos creado un sitio web responsivo e intuitivo adaptado a sus necesidades. El atractivo estético y el estilo de nuestro sitio cobran vida con Chakra UI, una biblioteca completa de componentes de React. Chakra UI no solo garantiza un diseño visualmente atractivo, sino que también contribuye a la capacidad de respuesta y accesibilidad general del sitio web. La navegación por las páginas se hace fluida y eficiente gracias a React Router DOM, una biblioteca que facilita la navegación dentro de un React. solicitud. Ya sea que esté explorando varias funciones o moviéndose entre secciones, React Router DOM garantiza una navegación fluida y agradable experiencia. Para agregar estilo y funcionalidad, incorporamos íconos de React y utilizamos varios ganchos de React. React Icons proporciona un conjunto diverso de íconos personalizables, mejorando los elementos visuales del sitio web. Los ganchos de reacción, como los que gestionan el estado y los efectos, desempeñan un papel crucial en asegurando actualizaciones e interacciones en tiempo real, contribuyendo al dinamismo general del sitio. En esencia, nuestro sitio web funciona con una combinación de HTML, CSS y JavaScript. Estas tecnologías web fundamentales proporcionan la estructura, el estilo y la interactividad que definen la experiencia del usuario. Para que nuestro sitio web sea multilingüe y fácil de usar, hemos integrado React-i18next, una popular biblioteca de internacionalización para React, que hace que el contenido sea accesible a una audiencia más amplia. Además, nuestro proyecto se beneficia de varias bibliotecas npm, como reaccionar-i18next, que mejoran nuestro proceso de desarrollo y nos permiten integrar sin problemas potentes funciones en nuestra aplicación. A medida que continuamos evolucionando, tenga la seguridad de que estamos comprometidos a permanecer en la vanguardia en tecnologías de desarrollo web para ofrecer una experiencia en línea excepcional."
+    },
+    "Title":{
+        "Text":"Desarrollado por juanse Rozo"
+    },
+    "TaskList":{
+        "Button":"Borrar todo"
+    },
+    "Menu":{
+        "Button1":"Casa",
+        "Button2":"Sobre Nosotros",
+        "Button3":"Tareas"
+    }
+}

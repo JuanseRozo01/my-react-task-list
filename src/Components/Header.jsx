@@ -1,7 +1,9 @@
+import { Heading } from "@chakra-ui/react";
+
 function Header() {
     return (
-    <div> 
-        <h2 className="header">TODO APP</h2>
-    </div>
+    
+        <Heading mt='30px' fontWeight='Bold' textAlign='center'>TODO APP</Heading>
+        
  )}
 export {Header};

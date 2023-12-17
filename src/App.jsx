@@ -1,19 +1,11 @@
-import './App.css'
-import './Components/Style.css'
-import { Header } from './Components/Header'
-import { TaskList } from './Components/TaskList'
-import Input from './Components/Input'
-import ContextProvider from './hooks/ContextProvider'
+import ContextProvider from './Contexts/ContextProvider';
+import AppRouter from './Routers/AppRouter';
 
 function App() {
 
   return (
-      <ContextProvider>
-    <>
-      <Header/>
-      <Input />
-      <TaskList />
-    </>
+    <ContextProvider>
+      <AppRouter />
     </ContextProvider>
   )
   }

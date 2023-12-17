@@ -1,77 +1,66 @@
-import { useContext, useState } from "react";
-import {MdDelete, MdEditSquare} from 'react-icons/md'
-import { Context } from "../hooks/Context";
+import { useContext } from "react";
+import {MdDelete, MdEditSquare} from 'react-icons/md';
+import { Context } from "../Contexts/Context";
+import InputEdit from "../../src/Forms/InputEdit";
+import { Checkbox, Stack, Box, Button, Flex, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 function TaskList () {
-  
-  const [estado, setEstado] = useState('');
-  const [description, setDescription] = useState('');
-  
+
+  const[ t, i18n ]= useTranslation('global');
+
   const { tasks, deleteTask,
     updateTask,clearAll,
     cambio } = useContext(Context);
 
   const mapeo = () => {
-     
     return (
-      <ul className="contenedor-ul">
+      <Stack direction={['column']} spacing={3} mt='15px' w='50vh' align='center' color=''>
+         
         {tasks?.map((task) => (
-          <li className = "barras" task ={task} key={task.id}>
-            <input type="checkbox" 
-            className="checkbox"
-            id={`checkbox-${task.id}`} />
-            <label htmlFor={`checkbox-${task.id}`}></label>
+          <Flex w='100%' alignItems='center' bg='' borderRadius='5px' padding='10px' justifyContent='space-between' border='1px solid' 
+           task ={task} key={task.id}>
+            <Checkbox marginLeft='5px' colorScheme='green' isInvalid  id={`checkbox-${task.id}` }></Checkbox>
 
-            <div className="input-edit">
+            <Box flexDirection='column' alignItems='center' bg='' marginLeft='5%'>
             {task.editado ? (
-                <input type="text" className="input-editado"
-                value={estado}
-                onKeyDown={(event)=>{
-                if(event.key === 'Enter' && (estado.trim() !== '')){
-                updateTask(task.id, {tarea: estado, description:description});}}}
-                onChange={(event) =>
-                setEstado(event.target.value)}/>) : <div className="editar-input">{task.tarea}</div>}
-    
-              {task.editado ? (
-                <input type="text" className="input-editado"
-                value={description}
-                onKeyDown={(event)=>{
-                if(event.key === 'Enter' && (estado.trim() !== '')){
-                updateTask(task.id, {tarea: estado, description:description});}}}
-                onChange={(event) =>
-               setDescription (event.target.value)}/>) : <div className="editar-input">{task.description}</div>}
-            </div>
+             <Box>
+               <InputEdit id={task.id} tarea={task.tarea} updateTask={updateTask} description={task.description} type="title" />
+               <InputEdit id={task.id} tarea={task.tarea} updateTask={updateTask} description={task.description} type="description" />
+             </Box>
+             ) : (
+             <Box>
+               <Text textAlign='center' fontWeight='Bold'>{task.tarea}</Text>
+               <Text textAlign='center'>{task.description}</Text>
+             </Box>
+             )}
+            </Box>
 
-            <div className="icons">
-              <button
-                className="edit"
-                onClick={() => cambio(task.id)}
-              >
+            <Box  marginLeft='20px'>
+              <Button color='white' bg='#4299E1' borderRadius='5px' m='5px'
+              onClick={() => cambio(task.id)}>
                 <MdEditSquare/>
-              </button>
-              <button
-                className="garbage"
-                onClick={() => deleteTask(task.id)}
-              >
+              </Button>
+              <Button color='white' bg='red' borderRadius='5px' m='5px'
+              onClick={() => deleteTask(task.id)}>
                 <MdDelete />
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
+              </Button>
+            </Box>
+
+          </Flex>
+        )
+      )}
+        </Stack>
     );
   };
   
   return(
-   <div >
-     {/* <ul className="container"> */}
-     {mapeo()}
-   <div className="container-clear">
-  <button  onClick={clearAll} className="Botton-clear">Clear all</button>
-    </div>
-    {/* </ul> */}
-  </div>
-);
-         };
+   <>
+   {mapeo()}
+   <Box direction={['column']} spacing={3} mt='13px'>
+   <Button onClick={clearAll} bg='red' borderRadius='5px' color='white' padding='10px 20px' marginLeft='vh' w='50vh'>{t("TaskList.Button")}</Button>
+  </Box>
+  </>
+);};
 
 export {TaskList};

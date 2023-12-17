@@ -1,0 +1,20 @@
+{
+    "Home":{
+        "Heading":"Welcome to Todo app",
+        "Text": "Hello there! Welcome to a world of possibilities with our innovative application, TaskMaster. We're thrilled to have you on board as we embark on this journey of productivity and efficiency. TaskMaster isn't just your average task manager; it's a dynamic tool crafted to adapt to your unique needs. Dive into a seamless experience of creating, editing, and organizing your tasks effortlessly. Our user-friendly interface ensures a smooth navigation experience, while powerful features empower you to prioritize, set deadlines, and categorize tasks with precision. We understand the importance of staying connected, so TaskMaster seamlessly syncs across all your devices, keeping you in control no matter where you are. But that's not all, our commitment to excellence means constant updates and enhancements, ensuring you always have access to the latest and greatest features. Your success is our priority, and we're excited to be part of your journey towards achieving your goals. Thank you for choosing TaskMaster; let's make every task a step towards success!"
+    },
+    "SobreNosotros":{
+        "Text":"Welcome to our feature-rich website built to enhance your digital experience! At the core of our platform is React, a powerful JavaScript library that allows us to create a seamless, dynamic user interface. Leveraging the flexibility and modularity of React, we've crafted a responsive and intuitive website tailored to your needs. The aesthetic appeal and styling of our site are brought to life with Chakra UI, a comprehensive React component library. Chakra UI not only ensures a visually appealing design but also contributes to the overall responsiveness and accessibility of the website. Navigating through the pages is made smooth and efficient thanks to React Router DOM, a library that facilitates navigation within a React application. Whether you're exploring various features or moving between sections, React Router DOM ensures a seamless and enjoyable browsing experience. To add flair and functionality, we've incorporated React Icons and utilized various React hooks. React Icons provides a diverse set of customizable icons, enhancing the visual elements of the website. React hooks, such as those managing state and effects, play a crucial role in ensuring real-time updates and interactions, contributing to the overall dynamism of the site. Under the hood, our website is powered by a combination of HTML, CSS, and JavaScript. These foundational web technologies provide the structure, styling, and interactivity that define the user experience. To make our website multilingual and user-friendly, we've integrated React-i18next, a popular internationalization library for React, making content accessible to a broader audience. Additionally, our project benefits from various npm libraries, such as react-i18next, which enhance our development process and allow us to seamlessly integrate powerful features into our application. As we continue to evolve, rest assured that we are committed to staying at the forefront of web development technologies to deliver an exceptional online experience."
+    },
+    "Title":{
+        "Text":"Powered by juanse Rozo"
+    },
+    "TaskList":{
+        "Button":"Clear all"
+    },
+    "Menu":{
+        "Button1":"Home",
+        "Button2":"About us",
+        "Button3":"Tasks"
+    }
+}

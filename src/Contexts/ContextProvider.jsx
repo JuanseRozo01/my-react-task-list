@@ -1,4 +1,4 @@
-import useFunctions from "./useFunctions";
+import useFunctions from "../hooks/useFunctions";
 import { Context } from './Context';
 
 function ContextProvider({children}){
